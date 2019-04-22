@@ -1,0 +1,125 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Formulário de contato </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="_css/style.css">
+</head>
+<body>
+
+
+    <div class="container">
+
+        <div class="card card-custom">
+            <div class="card-body">
+                    <form name="formteste" action="" method="post">
+                            <h1 class="contato"> Contato </h1>
+                    
+                            <div class="form-group">
+                                <label for="text"> Nome completo: </label>
+                                <input type="text" name="nome" class="form-control" placeholder="Informe seu nome completo" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="inputEmail"> E-mail: </label>
+                                <input type="email" name="email" class="form-control" placeholder="Informe seu e-mail" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                        <label for="text"> Telefones: </label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="telefone" class="form-control" placeholder="(00)00000-0000">
+                                    </div>
+                                
+                                    <div class="col-md-6">
+                                        <input type="text" name="telefone" class="form-control" placeholder="(00)0000-0000">
+                                    </div>   
+                                </div>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="text"> Observações do contato: </label>
+                                <input type="text" name="observações do contato" class="form-control" placeholder="Digite aqui suas observações" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                        <label for="number"> CEP: </label>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <input name="validar" class="form-control" id="cep">
+                                        <input type="button" class="btn btn-primary" id="btnBuscarCep" value="Buscar CEP">
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="form-group">
+                                    <label for=""> Logradouro: </label>
+                                    <input type="text" id="logradouro" name="logradouro" class="form-control" required>
+                                </div>
+                         
+                            <div class="form-group">
+                                <label for="number"> Número: </label>
+                                <input type="number" name="numero" class="form-control" required>
+                            </div>
+                         
+                            <div class="form-group">
+                                <label for="text"> Bairro: </label>
+                                <input type="text" name="bairro" class="form-control" id="bairro" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="text"> Cidade: </label>
+                                <input type="text" id="cidade" name="cidade" class="form-control" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="uf"> Estado </label>
+                                <select id="uf">
+                                    <option value=""></option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+                    
+                            <div class="botao-enviar">
+                                <button type="submit" class="btn btn-primary btn-block"> Enviar </button>
+                            </div>
+                        </form>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="_javascript/app.js"></script>
+</body>
+</html>
